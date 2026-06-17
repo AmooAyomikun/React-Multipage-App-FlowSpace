@@ -73,6 +73,14 @@ const ContactPage = () => {
 
     const navigate = useNavigate();
     function handleNavigation(){
+        setFormData({
+                    firstName: "",
+                    lastName: "",
+                    email: "",
+                    subject: "",
+                    message: ""
+        })
+
         setSubmitted(false)
         navigate('/contact')
     }
@@ -94,17 +102,17 @@ const ContactPage = () => {
             <h1 className="contact-heading">Get in touch</h1>
             <p className="contact-title">Have a question or want to see a demo? We respond within 24 hours.</p>
             <div className="contact-socials">
-                <div>
+                <div className="social-row-item">
                     <FontAwesomeIcon icon={faEnvelope} className='social-icon' />
                     <span className='social-content'>hello@flowspace.io</span>
                 </div>
 
-                <div>
+                <div className="social-row-item">
                     <FontAwesomeIcon icon={faLocation} className='social-icon' />
                     <span className='social-content'>Asaba, Nigeria</span>
                 </div>
 
-                <div>
+                <div className="social-row-item">
                     <FontAwesomeIcon icon={faTwitter} className='social-icon' />
                     <span className='social-content'>@flowspaceapp</span>
                 </div>
