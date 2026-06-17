@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/React-Multipage-App-FlowSpace'>
       <App />
     </BrowserRouter>
   </StrictMode>,
